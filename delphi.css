@@ -39,7 +39,7 @@ a:visited {color: #0000FF; text-decoration: none}
 a:hover{color: #FF00FF; text-decoration: none}
 a:active {color: #0000FF; text-decoration: none}  
 
-/* tabela com efeito no mouse. */
+/* tabela com efeito no mouse ========================= */
 table.zi tr {
 	background-color: #F0F0F0;
 }
