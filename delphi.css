@@ -1,9 +1,9 @@
 /*
-  Este arquivo foi testado para funcionar com o componente
-  TWebNavegator com Windows 7    
-  Atualizado em: 10/08/2021
+	Este arquivo foi testado para funcionar com o componente
+	TWebNavegator com Windows 7    
+  	Atualizado em: 13/08/2021
+	Fonte:  https://github.com/aldosena/cssdelphi;
 */
-
 * {
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
@@ -13,8 +13,7 @@ body{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	margin-top: 0px;
-	margin-left: 10px;
-	background-color: #cdffff; 
+	background-color: #b6ccff; 
 }
 
 /* imagens ficam sem bordas */
@@ -40,30 +39,22 @@ a:visited {color: #0000FF; text-decoration: none}
 a:hover{color: #FF00FF; text-decoration: none}
 a:active {color: #0000FF; text-decoration: none}  
 
-/*
- tabela com efeito no mouse. forma de chamar: 
- <table class="zi" cellspacing="4" cellpadding="4"> 
-*/
+/* tabela com efeito no mouse. */
 table.zi tr {
 	background-color: #F0F0F0;
 }
 table.zi tr:hover {
 	background-color: #CCCCCC;
 }
+/*  forma de chamar:  <table class="zi" cellspacing="4" cellpadding="4">  */
 
-/* CABEÇALHO - header */
+/* CABEÇALHO ======================================= */
 .header {
 	background-color: #999999;
-	/* height:140px; */
 	padding: 4px;
-  }
+}
 
-/* div geral que pega todo so corpo */
-.big {
-	padding: 10px;
-	overflow:auto;
-}  
-
+/* RODAPÉ ========================================== */
 #rodape {
 	background-color: #D7D7FF;
 	position: absolute;
@@ -72,66 +63,72 @@ table.zi tr:hover {
 	margin-top:7px;
 }
   
-/* MENU SUPERIOR - navigation bar */
+/* MENU SUPERIOR - navigation bar ======================= */
 .topnav {
 	overflow: hidden;
 	background-color: #333;
-  }
+}
   
-  /* Style the topnav links */
-  .topnav a {
+/* links padrão */
+.topnav a {
 	float: left;
 	display: block;
 	color: #f2f2f2;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-  }
+}
   
-  /* Change color on hover */
+  /* cores ao mudar */
   .topnav a:hover {
 	background-color: #ddd;
 	color: black;
   }
-  /*  fim do menu top  */
+  /* Campo Abaixo do menu superior */
+  .big {
+	padding: 10px;
+	overflow:auto;
+} 
+/* com chamar o menu lateral
+	<div class="topnav">
+  		<a href=".li1.php">Link 1 </a>
+  		<a href=".li2.php">Link 2 </a> 
+  	</div>	
+/*
+/*  fim do menu superior   */
 
-
-/*  MENU LATERAL */
-.menu {
-	float:left;
-	width:20%;
-	text-align:center;
-	overflow: hidden; /* aldo */
-  }
-  .menu a {
-	background-color:#dddddd;
-	padding:8px;
-	margin-top:7px;
-	display:block;
-	width:100%;
-	color:rgb(25, 0, 252);
-  }
-  .menu a:hover {
-	color: rgb(252, 4, 252);
-  }  
-  .main {
-	/* use quando houver menu lateral  */  
-	float:left;
-	width:70%;
-	padding:0 20px;
-  }
-  .right {
-	background-color:#e5e5e5;
-	float:left;
-	width:20%;
-	padding:15px;
-	margin-top:7px;
-	text-align:center;
-  }
-  
-@media only screen and (max-width:620px) {
-	/* For mobile phones: */
-	.menu, .main, .right {
-	  width:100%;
-	}
+/*  MENU LATERAL ==========================================*/
+.menu_lateral {
+	height: 100%;
+	width: 200px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: gray;
+	overflow-x: hidden;
 }
+  .menu_lateral a {
+	color: white;
+	padding: 16px;
+	text-decoration: none;
+	display: block;
+  }
+  .menu_lateral a:hover {
+	background-color: silver;
+	color: navy;
+  } 
+/* div que fica ao lado do menu lateral */
+	.quadro {
+  	margin-left: 200px;
+  	padding-left: 20px;
+	}
+/* com chamar o menu lateral
+  	<div class="menu_lateral">
+  		<a href=".li1.php">Link 1 </a>
+  		<a href=".li2.php">Link 2 </a> 
+  	</div>
+	<div class="quadro">
+		<p> texto </p>
+	</div>  
+*/  
