@@ -23,21 +23,12 @@ img {
 	border: 0px;
 }
 
-h1 {
-  color: #A9A9A9;
-}  
-
-h2 {
-  color: #d25cff;
-}  
-
-h3 {
-  color: #a794ff;
-} 
-
-i.aviso{
+.aviso{
 	color: green;
-}	
+}
+.titulo{
+            color: navy;   
+}
 
 /* links padrao */
 a:link {color: #0000FF; text-decoration: none}
