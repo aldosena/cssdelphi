@@ -35,6 +35,10 @@ h3 {
   color: #a794ff;
 } 
 
+i.aviso{
+	color: green;
+}	
+
 /* links padrao */
 a:link {color: #0000FF; text-decoration: none}
 a:visited {color: #0000FF; text-decoration: none}
