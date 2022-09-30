@@ -30,6 +30,13 @@ img {
             color: navy;   
 }
 
+/*  usado para fazer quebra de pagína na hora de imprimir */
+.xquebra{
+      page-break-after: always;
+}
+
+/* modo de usar, coloque <div class='xquebra'> </div> onde quer */
+
 /* links padrao */
 a:link {color: #0000FF; text-decoration: none}
 a:visited {color: #0000FF; text-decoration: none}
