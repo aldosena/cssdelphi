@@ -35,7 +35,20 @@ img {
 .xquebra{
   page-break-after: always;
 }
-/* modo de usar, coloque <div class='xquebra'> </div> onde quer */
+/* modo de usar, coloque <div class='xquebra'> </div> onde quer -------------------------------- */
+
+/* CABEÇALHO - header */
+.header {
+	background-color: #999999;
+	/* height:140px; */
+	padding: 4px;
+}
+
+/* div geral que pega todo so corpo */
+.big {
+	padding: 10px;
+	overflow:auto;
+} 
 
 input[type=text]{
 	padding: 8px;
