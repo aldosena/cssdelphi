@@ -1,15 +1,9 @@
 /*
 	Este arquivo foi testado para funcionar com o componente
 	TWebNavegator com Windows 7    
-  	Atualizado em: 08/09/2022
+  	Atualizado em: 2022-12-23
 	Fonte:  https://github.com/aldosena/cssdelphi;
 */
-
-
-* {
-	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
-  }
 
 body{
 	font-family: Arial, Helvetica, sans-serif;
@@ -18,16 +12,41 @@ body{
 	margin-top: 0px;
 }
 
+/* -- div q sempres fica oculta por padrão -------------------- */
+.divDetalhe{
+            display: none;
+}
+
+/* -- aviso div especial --------------------------------------- */
+.aviso {
+	border-left: 4px solid orange;
+	background-color: #ffffe8;
+	margin: 20px 200px 20px 100px;
+	padding: 5px 5px 5px 10px; 	
+ }
+ .aviso p {
+   color: Tomato;
+   padding: 5px 5px 5px 100px;
+ }
+
+ .aviso img {
+	/* margin-left: 8px; */
+	padding-left: 8px;
+}
+/* --------fim aviso --------------------------------------- --*/
+
+.titulo{
+            color: navy;   
+}
+
+/* -- uma dica na tela (antigo aviso)  ------ */
+.tip{
+	color: green;
+}
+
 /* imagens ficam sem bordas */
 img {
 	border: 0px;
-}
-
-.aviso{
-	color: green;
-}
-.titulo{
-            color: red;   
 }
 
 /*  usado para fazer quebra de pagína na hora de imprimir */
@@ -35,9 +54,7 @@ img {
       page-break-after: always;
 }
 
-/* modo de usar, coloque <div class='xquebra'> </div> onde quer */
-
-/* links padrao */
+/* links padrao  --------------------------------------- */
 a:link {color: #0000FF; text-decoration: none}
 a:visited {color: #0000FF; text-decoration: none}
 a:hover{color: #FF00FF; text-decoration: none}
@@ -58,12 +75,49 @@ table.zi td {
 }
 /* fim tabela <table class="zi"> -------------------------- */
 
-/* CABEÇALHO - header */
+/* tabela azul ------------------------------------------------------ */
+table.blue {
+	border-collapse: collapse;
+	width: 100%;
+}
+  
+table.blue th, td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #DDD;
+} 
+table.blue tr:hover {background-color: #D6EEEE;}
+/* fim azul ------------------------------------------------------ */
+
+
+/* tabela slim com bordas simples -------------------------------*/
+table.slim {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 8px;
+}
+table.slim th {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 8px;
+}
+table.slim tr {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 8px;
+}
+table.slim td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 8px;
+}
+/* fim slim --------------------------------------------------------- --*/
+
+/* CABEÇALHO ---------------------------------- - header */
 .header {
 	background-color: #999999;
-	/* height:140px; */
 	padding: 4px;
-  }
+}
 
 /* div geral que pega todo so corpo */
 .big {
@@ -79,7 +133,7 @@ table.zi td {
 	margin-top:7px;
 }
   
-/* MENU SUPERIOR - navigation bar */
+/* MENU SUPERIOR - navigation bar ----------------------------------- */
 .topnav {
 	overflow: hidden;
 	background-color: #333;
@@ -100,10 +154,10 @@ table.zi td {
 	background-color: #ddd;
 	color: black;
   }
-  /*  fim do menu top  */
+/*  fim do menu top ------------------------------------------------ */
 
 
-/*  MENU LATERAL */
+/*  MENU LATERAL ------------------------------------------------- */
 .menu {
 	float:left;
 	width:20%;
@@ -121,6 +175,8 @@ table.zi td {
   .menu a:hover {
 	color: rgb(252, 4, 252);
   }  
+  /* fim do menu lateral  ------------------------------------ */
+  
   .main {
 	/* use quando houver menu lateral  */  
 	float:left;
@@ -136,6 +192,7 @@ table.zi td {
 	text-align:center;
   }
   
+/* -- feliz ------------------------------------------------ */
 .feliz {
    border-left: 6px solid blue;
    background-color: #ffe5ed;
@@ -145,7 +202,9 @@ table.zi td {
 .feliz p {
   color: green;
 }
+/* -- fim feliz --------------------------------------------- */
 
+/* -- triste ----------------------------------------------- */
 .triste {
    border-left: 6px solid red;
    background-color: #ffe5ed;
@@ -155,50 +214,19 @@ table.zi td {
 .triste p {
   color: Tomato;
 }
+/* -- fim triste   ---------------------------------------- */ 
 
-/* forms ----------------------------------------------- */
-label {
-   display: block; 
-}
-select {
-  padding: 12px 20px;
-  margin: 8px 0;
-  border: 2px solid #555;
-  border-radius: 8px;
-  display: block; 
-  resize: vertical;
-}
-textarea {
-  padding: 12px 20px;
-  margin: 8px 0;
-  border: 2px solid #555;
-  border-radius: 8px;
-  display: block;   
-}
-input[type=text] {
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 2px solid #555;
-  outline: none;
-  background-color: #fafafa;
-  border-radius: 8px;
-  display: block; 
-}
-input[type=text]:focus {
-  background-color: white;
-}
-input[type=button], input[type=submit], input[type=reset] {
-  background-color: #04AA6D;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-}
+/* -- forms ----------------------------------------------- */
 
+/* -- fim forms ---------------------------------------- */
+
+/* quandro de avisos ----------------------------------- */
+div.quadroaviso{
+  border: 2px solid blue;
+  border-radius: 12px;
+  padding: 10px;
+}
+  
 @media only screen and (max-width:620px) {
 	/* For mobile phones: */
 	.menu, .main, .right {
