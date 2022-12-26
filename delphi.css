@@ -1,7 +1,7 @@
 /*
 	Este arquivo foi testado para funcionar com o componente
 	TWebNavegator com Windows 7    
-  	Atualizado em: 2022-12-23
+  	Atualizado em: 2022-12-26
 	Fonte:  https://github.com/aldosena/cssdelphi;
 */
 
@@ -53,6 +53,8 @@ img {
 .xquebra{
       page-break-after: always;
 }
+
+/* para funcionar, crie uma div: echo "<div class='xquebra'> </div>"; */
 
 /* links padrao  --------------------------------------- */
 a:link {color: #0000FF; text-decoration: none}
