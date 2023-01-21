@@ -12,6 +12,19 @@ body{
 	margin-top: 0px;
 }
 
+/* para a chamada presente e falta */
+.F {color: #FF00FF}
+.P {color: #006600}
+
+
+/* para colocar os botões(.png) na janela principal lado a lado */
+.myBt {
+  float: left; 
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+} 
+
 /* -- div q sempres fica oculta por padrão -------------------- */
 .divDetalhe{
             display: none;
