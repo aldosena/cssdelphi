@@ -87,12 +87,12 @@ img {
 	border: 0px;
 }
 
-/*  usado para fazer quebra de pagína na hora de imprimir */
+/* -- quebra de pagína na hora de imprimir - - - - - - -  */
 .xquebra{
       page-break-after: always;
 }
 
-/* para funcionar, crie uma div: echo "<div class='xquebra'> </div>"; */
+/* para funcionar, crie uma div: echo "<div class='xquebra'> </div> <!-- quebra de pagina -->"; */
 
 /* links padrao  --------------------------------------- */
 a:link {color: #0000FF; text-decoration: none}
