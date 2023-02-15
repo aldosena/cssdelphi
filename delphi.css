@@ -209,8 +209,8 @@ table.slim td {
   
 /* -- feliz ------------------------------------------------ */
 .feliz {
-   border-left: 6px solid blue;
-   background-color: #ffe5ed;
+   border-left: 6px solid #00c853;
+   background-color: #f9fbe7;
 	 margin: 20px 200px 20px 100px;
 	 padding: 5px 5px 5px 5px;
 }
