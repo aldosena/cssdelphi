@@ -48,6 +48,31 @@ body{
 }
 /* --------fim aviso --------------------------------------- --*/
 
+/* -- feliz ------------------------------------------------ */
+.feliz {
+   border-left: 6px solid #00c853;
+   background-color: #f9fbe7;
+	 margin: 20px 200px 20px 100px;
+	 padding: 5px 5px 5px 5px;
+}
+.feliz p {
+  color: green;
+}
+/* -- fim feliz --------------------------------------------- */
+
+/* -- triste ----------------------------------------------- */
+.triste {
+   border-left: 6px solid red;
+   background-color: #ffe5ed;
+	 margin: 20px 200px 20px 100px;
+	 padding: 5px 5px 5px 5px;
+}
+.triste p {
+  color: Tomato;
+}
+/* -- fim triste   ---------------------------------------- */ 
+
+/* -- texto de título ------------------------------------- */
 .titulo{
             color: #4527a0;   
 }
@@ -206,30 +231,7 @@ table.slim td {
 	margin-top:7px;
 	text-align:center;
   }
-  
-/* -- feliz ------------------------------------------------ */
-.feliz {
-   border-left: 6px solid #00c853;
-   background-color: #f9fbe7;
-	 margin: 20px 200px 20px 100px;
-	 padding: 5px 5px 5px 5px;
-}
-.feliz p {
-  color: green;
-}
-/* -- fim feliz --------------------------------------------- */
 
-/* -- triste ----------------------------------------------- */
-.triste {
-   border-left: 6px solid red;
-   background-color: #ffe5ed;
-	 margin: 20px 200px 20px 100px;
-	 padding: 5px 5px 5px 5px;
-}
-.triste p {
-  color: Tomato;
-}
-/* -- fim triste   ---------------------------------------- */ 
 
 /* -- forms ----------------------------------------------- */
 
