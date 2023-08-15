@@ -244,7 +244,9 @@ div.quadroaviso{
   border-radius: 12px;
   padding: 10px;
 }
-  
+
+.xote {color: red}
+
 @media only screen and (max-width:620px) {
 	/* For mobile phones: */
 	.menu, .main, .right {
