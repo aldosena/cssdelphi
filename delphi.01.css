@@ -15,8 +15,8 @@ body{
 
 /* tags personalizadas */
 h1 {color: orange}
-h1.title {color: blue}
-em {color: green}
+h2 {color: navy}
+i {color: green}
 
 /* para a chamada presente e falta */
 .F {color: #FF00FF}
