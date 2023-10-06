@@ -90,6 +90,15 @@ em {color: green}
 	color: green;
 }
 
+/* div geral só para destacar */
+.divSimple{
+	border-style: solid;
+	border-width: 2px;
+	border-color:green;
+	margin: 20px;
+	padding: 20px;
+}	
+
 /* imagens ficam sem bordas */
 img {
 	border: 0px;
