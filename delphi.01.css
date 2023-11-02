@@ -80,6 +80,14 @@ em {color: green}
 }
 /* -- fim triste   ---------------------------------------- */ 
 
+/* -- pesquisa (usado na linha de pesquia de nome de aluno  ----------------------------------------------- */
+.pesquisa {
+   background-color: siver;
+	 margin: 5px 5px 5px 5px;
+	 padding: 5px 5px 5px 5px;
+}
+/* -- fim pesquisa   ---------------------------------------- */ 
+
 /* -- texto de título ------------------------------------- */
 .titulo{
             color: #4527a0;   
