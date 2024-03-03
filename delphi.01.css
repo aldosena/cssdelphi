@@ -270,7 +270,9 @@ div.quadroaviso{
 }
 
 .xote {color: red}
-.sky {color: blue}
+.blood {color: red}
+.sky {color: blue} 
+.tree {color: green}
 
 @media only screen and (max-width:620px) {
 	/* For mobile phones: */
