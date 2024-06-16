@@ -1,10 +1,10 @@
 /*
  Este arquivo foi testado para funcionar com o componente
- TWebNavegator com Windows 10    
+ TWebNavegator do Delphi com Windows 10    
  Atualizado em: 2023-08-15
  Fonte:  https://github.com/aldosena/cssdelphi;
- cdn: www.jsdelivr.com
 */
+
 html, body{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
@@ -14,12 +14,13 @@ html, body{
 }
 
 /* tags personalizadas */
-h1 {color: orange}
-h2 {color: orangered}
-h3 {color: tomato}
-h4 {color: navy}
-h5 {color: lime}
-em {color: green}
+h1 {color: #78909c }
+h2 {color: #607d8b }
+h3 {color: #546e7a }
+h4 {color: #455a64 }
+h5 {color: #37474f }
+h6 {color: #263238 }
+em {color: green }
 
 /* para a chamada presente e falta */
 .F {color: #FF00FF}

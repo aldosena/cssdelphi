@@ -1,16 +1,19 @@
-/*
-	Este arquivo foi testado para funcionar com o componente
-	TWebNavegator com Windows 7    
-  	Atualizado em: 2023-22-15
-	Fonte:  https://github.com/aldosena/cssdelphi;
-*/
-
 body{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	margin-left: 10px;
 	margin-top: 0px;
+	height: 100%;
 }
+
+/* tags personalizadas */
+h1 {color: #78909c }
+h2 {color: #607d8b }
+h3 {color: #546e7a }
+h4 {color: #455a64 }
+h5 {color: #37474f }
+h6 {color: #263238 }
+em {color: green }
 
 /* para a chamada presente e falta */
 .F {color: #FF00FF}
